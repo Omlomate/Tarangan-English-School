@@ -502,3 +502,34 @@ h6,
     border-right: none;
 }
 
+.nav-item.dropdown .nav-link.dropdown-toggle {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px; /* round pill shape */
+    background-color: #fe5d37; /* orange background */
+    color: white; /* white text color */
+    padding: 10px 20px; /* adjust padding as needed */
+    align-items: center;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    border-radius: 0 0 10px 10px; /* rounded bottom corners */
+    border: 0; /* remove border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* add shadow */
+}
+
+
+@media screen and (max-width: 767px) {
+    .nav-item.dropdown.desktop {
+        display: none;
+    }
+}
+
+/* Hide mobile dropdown on desktop */
+@media screen and (min-width: 768px) {
+    .nav-item.dropdown.mobile {
+        display: none;
+    }
+}
+
+
